@@ -17,13 +17,12 @@ body{
     color: #FFF;
 }
 
-
 .galeria{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
     object-fit: cover;  
     margin: 30px 20px;
-
 
 & .jogo{
     width: 250px;
@@ -38,3 +37,24 @@ body{
     transform: scale(1.06);
 }}
 
+.footer{
+    text-align: center;
+    color: #FFF;
+    background-color: rgb(27, 25, 25);
+    padding: 30px;
+}
+
+.lista{
+    color: #FFF;
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 600px){
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+}
